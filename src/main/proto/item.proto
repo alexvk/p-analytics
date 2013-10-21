@@ -1,0 +1,22 @@
+package com.cloudera.fts.proto;
+
+// A complete view of user activity.
+message PItemRecord {
+  // The item serial number
+  optional string serial_num = 1;
+
+  // The item latest test result
+  optional string status = 2;
+
+  // The item attributes (w/o history)
+  repeated PItemAttribute attributes = 3;
+}
+
+// A key->value mapping for the attributes
+message PItemAttribute {
+  optional string serial_num = 1;
+  optional int64 seq = 2;
+  required string name = 3;
+  optional string value = 4;
+  optional int32 int = 5;
+}

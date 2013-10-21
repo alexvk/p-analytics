@@ -1,0 +1,1 @@
+SELECT serial_num, status, name, value from item LATERAL VIEW explode(attr) theAttributes as name, value;

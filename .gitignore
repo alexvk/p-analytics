@@ -1,0 +1,21 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse Files #
+.classpath
+.project
+.settings
+.wtpmodules
+
+# Local Files #
+target
+conf
+lib
+
+# Project Specific Files #
+DEP
+JOB

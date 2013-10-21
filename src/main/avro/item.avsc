@@ -1,0 +1,29 @@
+{
+  "type" : "record",
+  "namespace" : "com.cloudera.fts.avro",
+  "name" : "AvroItem",
+  "fields" : [ {
+    "name" : "serial_num",
+    "type" : "string",
+    "java-class": "java.lang.CharSequence",
+    "doc" : "P-Analytics project: Serial Number"
+  }, {
+    "name" : "status",
+    "type" : [ "null", "string" ],
+    "java-class": "java.lang.CharSequence",
+    "doc" : "P-Analytics project: Cert Test Result"
+  }, {
+    "name" : "seq",
+    "type" : [ "null", "long" ],
+    "java-class": "java.lang.Long",
+    "doc" : "P-Analytics project: Test Sequence #"
+  }, {
+    "name" : "attributes",
+    "type" : [ "null", {
+      "type" : "map",
+      "values" : "string"
+    } ],
+    "java-class": "java.util.Map<java.lang.CharSequence,java.lang.CharSequence>",
+    "doc" : "P-Analytics project: Attributes of an item"
+  } ]
+}
